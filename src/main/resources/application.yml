@@ -1,0 +1,12 @@
+management:
+  server:
+    port: 9000
+  endpoints:
+    web:
+      exposure:
+        include: health, shutdown, prometheus
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
